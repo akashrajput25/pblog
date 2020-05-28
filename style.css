@@ -67,7 +67,7 @@ overflow:hidden;
 aside #sidebar
 {
   float:right;
-  width:50%;
+  width:30%;
   margin-top: 10px;
 }
 article #main-col
@@ -105,7 +105,7 @@ header a:hover{
  animation: left;
 }
 #boxes{
-  margin-top: 20px;
+  margin-top: 30px;
 }
 #boxes a
 {
@@ -115,13 +115,15 @@ header a:hover{
 }
 #boxes .box{
   float:left;
-  font-size: 22px;
-  width: 40%;
+  font-size: 20px;
+  width: 33%;
   text-align:center;
   text-shadow: 2px 2px 3px #012;
 }
 #boxes .box img{
-  width: 280px;
+  width: 220px;
+  height:200px;
+  margin-top: 50px;
 }
 footer{
   padding: 20px;
@@ -140,17 +142,14 @@ footer a
 {
   text-align: center;
   font-weight: bold;
-  font-family: Gill Sans, sans-serif
-  color:#1ea8fd;
-  font-size: 30px;
+  font-size: 45px;
 }
 #skill
 {
-  height: 80px;
+  height: 70px;
   color:#ffffff;
   background:#1593a5;
   text-align: center;
-  padding-bottom: 20px;
   text-shadow: 2px 2px 8px #666;
 }
 showcase h1
@@ -252,7 +251,6 @@ z-index:2;
   max-width:960px;
   margin: auto;
   overflow: hidden;
-  padding: 0 3rem;
 }
 .showcase
 {
@@ -360,7 +358,7 @@ z-index:2;
 {
   border-top: 30px;
   color: #FF2A00;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bolder;
   text-shadow: 3px 4px 7px #000000;
 }

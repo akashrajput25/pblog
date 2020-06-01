@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 :root{
   --primary-color:rgba(13, 110, 139,.56);
   --overlay-color:rgba(24,39,51,0.85);
   --menu-speed:0.75s;
+}
+html{
+
+  scroll-behavior:smooth;
 }
 .btn:hover
 {
@@ -279,7 +284,7 @@ z-index:2;
 }
 .showcase .showcase-inner h1
 {
-  font-size: 70px;
+  font-size: 50px;
   text-shadow: 2px 2px 8px #000;
   padding-bottom: 50px;
   padding-bottom: -10px;
@@ -365,7 +370,7 @@ z-index:2;
   border-top: 30px;
   color: #FF2A00;
   font-family: Poppins;
-  font-size: 75px;
+  font-size: 45px;
   text-shadow: 3px 4px 7px #000000;
 }
 .ui
@@ -386,7 +391,7 @@ z-index:2;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
   grid-template-rows: auto;
-  grid-gap:0 80px;
+  grid-gap:0 100px;
 
 }
 .contain .bx
@@ -512,4 +517,115 @@ z-index:2;
   z-index:2;
   pointer-events: none;
   mix-blend-mode: screen;
+}
+.card
+{
+  position: absolute;
+  top:160%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 280px;
+  height: 350px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+.card .front
+{
+  position: absolute;
+  top:0;
+  left: 0;
+  border: #ff0000;
+  border-radius: 10px ;
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  background: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+.card:hover .front
+{
+  transform:rotateX(-180deg);
+}
+.card .back
+{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  border-radius: 20px;
+  height: 80%;
+  font-family: 'Josefin Sans' ,sans-serif;
+  background: #ff0000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+.card .back::before
+{
+  content: '';
+  position: absolute;
+  top:0;
+  left:-50%
+  width:100%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+}
+.card:hover .back
+{
+  transform:rotateX(0deg);
+}
+.card .back .details
+{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left:0;
+  width:100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.card .back .details h2
+{
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color:#ffff;
+}
+.card .back .details h2 span
+{
+  color:#a7a7a7;
+  font-size: 16px;
+}
+.socialicons
+{
+  padding: 10px 0;
+}
+.socialicons a
+{
+  display: inline-block;
+  width:36px;
+  height: 36px;
+  text-align: center;
+  background: #262626;
+  color:#fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.socialicons a .fab
+{
+  line-height: 36px;
+}
+.socialicons a:hover
+{
+  background: #39bdbd;
+}
+#flip
+{
+  border-bottom: 100px;
+  border-top: 100px;
+  padding-bottom: 200px;
 }

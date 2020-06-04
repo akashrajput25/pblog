@@ -133,6 +133,13 @@ header a:hover{
   text-align:center;
   text-shadow: 2px 2px 3px #012;
 }
+#boxes i{
+  width: 300px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  font-size: 130px;
+  margin-top: 10px;
+}
 #boxes .box img{
   width: 300px;
   padding-left: 10px;
